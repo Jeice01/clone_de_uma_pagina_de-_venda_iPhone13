@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header nav {
+    background-color: #333;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.7rem;
+    padding: 0 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#navbar a{
+    color: #f5f5f5;
+    transform: 4s;
+}
+
+#navbar a:hover {
+    color: #fff;
+}
+
+#bottom-header {
+    font-size: 0.8rem;
+    padding: 1rem;
+    border-bottom: 1rem solid #ccc;
+}
+
+#bottom-header h3 {
+    font-size: 1.2rem;
+}
+
+#bottom-header a {
+    color: #333;
+}
+
+#bottom-header-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bottom-header-inner a {
+    margin: 0 0.5rem;
+}
+
+#bottom-header-inner .btn,
+.btn {
+    background-color: #0071e3;
+    border-radius: 10rem;
+    padding: 0.4rem 1rem;
+    color: #fff;
+}
+
+/* Conteúdo */
+
+#ribbon {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f5f5f7;
+    color: #1d1d1d;
+    font-size: 0.8rem;
+}
+
+#ribbon a {
+    color: #0071e3;
+}
+
+#main-content {
+    text-align: center;
+    color: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main-content #title {
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+
+#main-content #subtitle {
+    margin: 1rem;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#main-content #description {
+    max-width: 600px;
+    margin: 1rem auto;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+#main-content #price {
+    margin: 2rem;
+    font-size: 1.3rem;
+    color: #86868b;
+}
+
+#main-content .btn {
+    padding: 0.8rem 1.4rem;
+    font-size: 1.1rem;
+    align-self: center;
+}
+
+#main-content #product-image {
+    max-width: 1000px;
+    margin: 3rem auto;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#main-content #product-image.changing {
+    opacity: 0.5;
+}
+
+#image-picker {
+    padding: 50px;
+}
+
+#image-picker ul {
+    display: flex;
+    justify-content: center;
+}
+
+#image-picker li {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+#image-picker li .color {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px;
+    border: 4px solid #fff;
+    pointer-events: none;
+}
+
+#image-picker li .description {
+    font-size: 0.7rem;
+    color: #1d1d1d;
+    margin-top: 0.6rem;
+}
+
+#green .color {
+    background-color: #394c38;
+}
+
+#silver .color {
+    background-color: #f1f2ed;
+}
+  
+#golden .color {
+    background-color: #fae7cf;
+}
+  
+#grafite .color {
+    background-color: #54524f;
+}
+  
+#blue .color {
+    background-color: #a7c1d9;
+}
+
+.selected {
+    outline: 2px solid #43a1ff;
+}
+
+
+/* Campo Jeice */
+.content {
+    padding-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+}
+
+.title {
+    padding: 64px 0 41px;
+    text-align: center;
+    letter-spacing: 0;
+    font-weight: 600;
+    line-height: 1.1;
+    font-size: 40px;
+    color: #1d1d1f;
+}
+
+.list-items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    justify-content: center;
+    padding: 10px;
+    gap: 5px;
+    background-color:#fbfbfd ;
+}
+
+.item-label {
+    padding: 24px 15px 0;
+    color: #1d1d1f;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.content-descriptions {
+    color: #6e6e73;
+    padding-top: 50px;
+    text-align: center;
+}
+
+strong {
+    font-weight: 600;
+}
+
+a {
+    color: #43a1ff;
+    letter-spacing: inherit;
+}
+
+
+footer {
+    margin-top: 40px; /* Adiciona espaço acima do rodapé */
+}
+
+
+
+
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#footer-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+    #navbar li {
+      display: none;
+    }
+  
+    #navbar #logo {
+      display: flex;
+    }
+  
+    #bottom-header-links a {
+      display: none;
+    }
+  
+    #bottom-header-links .btn {
+      display: flex;
+    }
+  
+    #main-content {
+      padding: 2rem;
+      overflow: hidden;
+    }
+  
+    #main-content #subtitle {
+      font-size: 3rem;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 868px) and (max-width: 1024px) {
+    /* Estilos para o cabeçalho */
+    header nav {
+        padding: 10px; /* Adapta o preenchimento do menu de navegação */
+    }
+
+    #navbar {
+        justify-content: space-between; /* Ajusta a distribuição dos itens */
+    }
+
+    #navbar a {
+        font-size: 0.8rem; /* Reduz o tamanho da fonte dos links */
+        margin: 0 5px; /* Ajusta as margens entre os links */
+    }
+
+    #bottom-header {
+        padding: 0.8rem; /* Adapta o preenchimento do cabeçalho inferior */
+    }
+
+    #bottom-header-inner {
+        flex-direction: column; /* Alinha os itens verticalmente */
+        align-items: center; /* Centraliza os itens horizontalmente */
+    }
+
+    #bottom-header-inner h3 {
+        font-size: 1rem; /* Reduz o tamanho da fonte do título */
+    }
+
+    #bottom-header-inner a {
+        margin: 5px; /* Ajusta as margens entre os links */
+    }
+
+    /* Estilos para o conteúdo principal */
+    #main-content {
+        padding: 1rem; /* Adapta o preenchimento do conteúdo principal */
+    }
+
+    #main-content #title {
+        font-size: 1.1rem; /* Reduz o tamanho da fonte do título */
+    }
+
+    #main-content #subtitle {
+        font-size: 3rem; /* Reduz o tamanho da fonte do subtítulo */
+    }
+
+    #main-content #description {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte da descrição */
+        max-width: 80%; /* Adapta a largura máxima da descrição */
+    }
+
+    #main-content #price {
+        font-size: 1.1rem; /* Reduz o tamanho da fonte do preço */
+    }
+
+    #main-content .btn {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte dos botões */
+        padding: 0.6rem 1rem; /* Adapta o preenchimento dos botões */
+    }
+
+    #main-content #product-image {
+        max-width: 90%; /* Adapta a largura máxima da imagem do produto */
+    }
+
+
+}
+
+/* Estilos para dispositivos móveis */
+@media only screen and (min-width: 601px) and (max-width: 867px) {
+    .content {
+        width: 90%; /* Reduz a largura do conteúdo */
+        margin: 0 auto; /* Centraliza o conteúdo na tela */
+    }
+
+    .list-items {
+        padding: 10px; /* Adapta o preenchimento da lista */
+    }
+
+    .list-items-item {
+        width: 45%; /* Reduz a largura dos itens */
+    }
+
+    .item-label {
+        font-size: 12px; /* Reduz o tamanho da fonte do texto do item */
+    }
+
+    .content-descriptions {
+        font-size: 13px; /* Reduz o tamanho da fonte do texto */
+    }
+}
+
+/* Estilos para dispositivos menores que 600px (telefones) */
+@media (max-width: 600px) {
+    .content {
+        padding: 20px; /* Adapta o preenchimento do conteúdo */
+        width: auto; /* Define a largura automática */
+    }
+
+    .title {
+        padding: 20px 0; /* Reduz o preenchimento do título */
+        font-size: 28px; /* Reduz o tamanho da fonte do título */
+    }
+
+    .list-items {
+        flex-direction: column; /* Altera a direção dos itens para coluna */
+        align-items: center; /* Centraliza os itens na horizontal */
+        padding: 10px; /* Adapta o preenchimento da lista */
+    }
+
+    .list-items-item {
+        width: 80%; /* Define uma largura maior para os itens */
+    }
+
+    .item-label {
+        margin-top: 10px; /* Adapta o espaçamento do texto */
+    }
+
+    .content-descriptions {
+        padding-top: 20px; /* Adapta o espaçamento do texto */
+        padding-bottom: 20px; /* Adapta o espaçamento do texto */
+        font-size: 14px; /* Reduz o tamanho da fonte */
+    }
+}
+
