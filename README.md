@@ -40,5 +40,3 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir um issue para re
 
 Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
 
----
-Lembre-se de substituir `seu-usuario` e `nome-do-repositorio` pelos seus dados reais.
